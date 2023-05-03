@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Search Bar*/
+
+.search-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.search-main-container {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 2px 20px;
+  border-radius: 20px;
+  background-color: white;
+  gap: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  height: 20px;
+}
+
+.search-main-container i {
+  font-size: large;
+  color: #8b92ab;
+}
+
+.search-main-container input {
+  width: 100%;
+  border: none;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #116277 !important;
+  border-color: #116277 !important;
+}
+
+/*Pagination CSS*/
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.35rem;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #4e73df;
+  background-color: #fff;
+  border: 1px solid #dddfeb;
+}
+
+.page-link:hover {
+  z-index: 2;
+  color: #224abe;
+  text-decoration: none;
+  background-color: #eaecf4;
+  border-color: #dddfeb;
+}
+
+.page-link:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+.page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 0.35rem;
+  border-bottom-left-radius: 0.35rem;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 0.35rem;
+  border-bottom-right-radius: 0.35rem;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #ff0000;
+  border-color: #ff0000;
+}
+
+.page-item.disabled .page-link {
+  color: #858796;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #fff;
+  border-color: #dddfeb;
+}
+
+.pagination-lg .page-link {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.pagination-lg .page-item:first-child .page-link {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.pagination-lg .page-item:last-child .page-link {
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.pagination-sm .page-link {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.pagination-sm .page-item:first-child .page-link {
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+}
+
+.pagination-sm .page-item:last-child .page-link {
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+
+/*Dummy data css*/
+.dummy-main-div{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.data-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 300px;
+}
+
+.data-list {
+  padding: 10px;
+}
+
+.data-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 485px) {
+  .search-main-container {
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 485px) {
+  .search-main-container {
+    width: 80%;
+    font-size: 14px;
+    padding: 4px 15px;
+  }
+}
