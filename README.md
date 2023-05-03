@@ -15,4 +15,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Branch
 
 "search-pagination-component" - This branch has example of Search component + Pagination component
-To visualise or see the working, click the link [http://localhost:3000/SearchPage].
+To visualise or see the working, click the link [http://localhost:3000/SearchPage](http://localhost:3000/SearchPage).
